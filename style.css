@@ -11,18 +11,37 @@ body {
 header {
   background-color: #e2c88d;
   width: auto;
+  display: grid;
+  place-items: center;
 }
 .huvud {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
-  grid-gap: 0em;
+  grid-gap: 1em;
   margin: 0 3em 0 3em;
+  width: 70%;
+  @media (min-width: 620px) {
+    width: 60%;
+  }
+  @media (min-width: 820px) {
+    width: 50%;
+  }
+  @media (min-width: 1000px) {
+    width: 40%;
+  }
 }
+
 .logga {
   margin: 1em 0 1em 0;
-  width: 80%;
+  width: 100%;
   border-radius: 4em;
+  @media (min-width: 450px) {
+    width: 80%;
+  }
+  @media (min-width: 620px) {
+    width: 70%;
+  }
 }
 a {
   color: #000000;
@@ -32,18 +51,35 @@ main {
   margin: 0 3em 0 3em;
   display: grid;
   place-items: center;
-  width: 60%;
+  width: 90%;
+  @media (min-width: 620px) {
+    width: 85%;
+  }
+  @media (min-width: 820px) {
+    width: 80%;
+  }
+  @media (min-width: 1000px) {
+    width: 75%;
+  }
+  @media (min-width: 1200px) {
+    width: 70%;
+  }
+  @media (min-width: 1600px) {
+    width: 65%;
+  }
+  @media (min-width: 2000px) {
+    width: 60%;
+  }
 }
 .container {
+  padding: 1.5em 0 1.5em 0;
   display: grid;
   place-items: center;
-  padding: 1.5em 0 1.5em 0;
 }
 h1 {
   margin-bottom: 0.5em;
 }
 .hotellet {
-  background-color: #3b0b11;
   padding: 1em;
   margin-top: 2em;
   display: grid;
@@ -54,21 +90,63 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
+  @media (min-width: 1300px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+  }
 }
-.bilder {
+.bilderhotel {
   width: 100%;
 }
-.info {
-  padding: 1em;
+.bild {
+  width: 100%;
+  @media (min-width: 1000px) {
+    width: 70%;
+  }
 }
 ul {
   padding-top: 0.5em;
   padding-bottom: 1em;
 }
-button {
+.button {
   background-color: #3b0b11;
   color: #e2c88d;
   width: 10em;
   height: 4em;
   border-radius: 1em;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+}
+h2 {
+  padding: 0.5em 0 0.5em 0;
+}
+.Text {
+  color: #b2ab9b;
+  font-weight: 500;
+}
+.bilderdator {
+  padding-top: 1em;
+  width: 50%;
+  @media (min-width: 1000px) {
+    width: 30%;
+    padding-top: 2em;
+  }
+}
+footer {
+  background-color: #e2c88d;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.fot {
+  display: grid;
+  place-items: center;
+  width: 90%;
+}
+footer img {
+  width: 30%;
+  border-radius: 4em;
+  padding: 1em;
 }

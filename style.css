@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  box-sizing: border-boxs;
+}
+body {
+  background-color: #28282a;
+  color: #e2c88d;
+  display: grid;
+  place-items: center;
+}
+header {
+  background-color: #e2c88d;
+  width: auto;
+}
+.huvud {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  grid-gap: 0em;
+  margin: 0 3em 0 3em;
+}
+.logga {
+  margin: 1em 0 1em 0;
+  width: 80%;
+  border-radius: 4em;
+}
+a {
+  color: #000000;
+  font-weight: bold;
+}
+main {
+  margin: 0 3em 0 3em;
+  display: grid;
+  place-items: center;
+  width: 60%;
+}
+.container {
+  display: grid;
+  place-items: center;
+  padding: 1.5em 0 1.5em 0;
+}
+h1 {
+  margin-bottom: 0.5em;
+}
+.hotellet {
+  background-color: #3b0b11;
+  padding: 1em;
+  margin-top: 2em;
+  display: grid;
+  place-items: center;
+}
+.Småcontainer {
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+.bilder {
+  width: 100%;
+}
+.info {
+  padding: 1em;
+}
+ul {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+button {
+  background-color: #3b0b11;
+  color: #e2c88d;
+  width: 10em;
+  height: 4em;
+  border-radius: 1em;
+}

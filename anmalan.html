@@ -5,6 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anmälan</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="anmalan.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="huvud">
+        <a href="anmalan.html"> Anmälan</a>
+        <img
+          class="logga"
+          src="bilder/Skärmbild 2023-10-06 131501.png"
+          alt="Företagets Loga"
+        />
+        <a href="index.html#Seminarier"> Seminarier</a>
+      </div>
+    </header>
+    <main>
+      <h1>Anmäl dig här</h1>
+      <form>
+        <section class="form-section">
+          <label for="form-name"> Skriv in ditt namn. För och efternamn </label>
+          <input
+            id="form-name"
+            type="text"
+            value=""
+            placeholder="Namn"
+            required
+            minlength="10"
+            maxlength="30"
+          />
+          <!-- <p class="error-message">Var vänlig skriv in ditt namn</p> -->
+        </section>
+
+        <section class="form-section">
+          <label for="form-adress"> Adress </label>
+          <input
+            id="form-adress"
+            type="text"
+            required
+            value=""
+            placeholder="Göteborg"
+          />
+        </section>
+
+        <section class="form-section">
+          <label for="form-epost"> E-postadress </label>
+          <input
+            id="form-epost"
+            type="text"
+            value=""
+            placeholder="@hotmail.com"
+            required
+          />
+        </section>
+
+        <!-- <section class="form-section">
+          <label for="form-password"> Lösenord </label>
+          <input id="form-password" type="password" required />
+        </section> -->
+
+        <section class="form-section">
+          <p>Välj dag/dagar du vill gå</p>
+          <div>
+            <input id="easy-1" type="radio" name="radio-1" />
+            <label for="easy-1"> Fredag </label>
+          </div>
+          <div>
+            <input id="easy-2" type="radio" name="radio-1" />
+            <label for="easy-2"> Lördag </label>
+          </div>
+          <div>
+            <div>
+              <input id="easy-3" type="radio" name="radio-1" />
+              <label for="easy-3"> Söndag </label>
+            </div>
+            <input id="easy-4" type="radio" name="radio-1" />
+            <label for="easy-4"> Helgpass Fredag-Söndag </label>
+          </div>
+          <p>Vad vill du äta</p>
+          <div>
+            <input id="easy-5" type="radio" name="radio-1" />
+            <label for="easy-5"> Kött </label>
+          </div>
+          <div>
+            <input id="easy-6" type="radio" name="radio-1" />
+            <label for="easy-6"> Fisk </label>
+          </div>
+          <div>
+            <input id="easy-7" type="radio" name="radio-1" />
+            <label for="easy-7"> Vegetariskt </label>
+          </div>
+        </section>
+        <section class="form-section row">
+          <button type="submit">Spara inställningar</button>
+          <button type="button">Avbryt, stäng osv.</button>
+        </section>
+      </form>
+    </main>
+    <footer>
+      <div class="fot">
+        <img src="bilder/Skärmbild 2023-10-06 131501.png" alt="" />
+      </div>
+    </footer>
+  </body>
 </html>

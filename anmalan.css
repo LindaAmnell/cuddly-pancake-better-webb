@@ -1,0 +1,32 @@
+form {
+  background-color: #3b0b11;
+  margin: 0.5em 0;
+  padding: 1em 3em 2em 3em;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+}
+.form-section.row {
+  flex-direction: row;
+}
+
+input:valid {
+  border-right: 1em solid rgb(35, 130, 71);
+}
+input:invalid {
+  border-right: 1em solid rgb(111, 33, 33);
+}
+
+.error-message {
+  visibility: hidden;
+  margin: 0;
+  color: rgb(111, 33, 33);
+  font-weight: bold;
+}
+/* Sibling selector, + väljer ut nästa element */
+input:invalid + .error-message {
+  visibility: visible;
+}

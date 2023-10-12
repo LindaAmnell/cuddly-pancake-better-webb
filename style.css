@@ -7,6 +7,8 @@ body {
   color: #e2c88d;
   display: grid;
   place-items: center;
+  font-family: "Cinzel", serif;
+  font-size: large;
 }
 header {
   background-color: #e2c88d;
@@ -48,10 +50,11 @@ a {
   font-weight: bold;
 }
 main {
-  margin: 0 3em 0 3em;
+  margin: 0 4em 0 4em;
   display: grid;
   place-items: center;
   width: 90%;
+  padding-bottom: 2.5em;
   @media (min-width: 620px) {
     width: 85%;
   }
@@ -65,10 +68,10 @@ main {
     width: 70%;
   }
   @media (min-width: 1600px) {
-    width: 65%;
+    width: 60%;
   }
   @media (min-width: 2000px) {
-    width: 60%;
+    width: 50%;
   }
 }
 .container {
@@ -78,6 +81,7 @@ main {
 }
 h1 {
   margin-bottom: 0.5em;
+  font-size: xx-large;
 }
 .hotellet {
   padding: 1em;
@@ -99,15 +103,19 @@ h1 {
 .bilderhotel {
   width: 100%;
 }
-.bild {
-  width: 100%;
-  @media (min-width: 1000px) {
-    width: 70%;
-  }
-}
+
 ul {
   padding-top: 0.5em;
   padding-bottom: 1em;
+}
+.bättreweb {
+  width: 60%;
+  padding-bottom: 2em;
+}
+
+.datorer {
+  display: grid;
+  place-items: center;
 }
 .button {
   background-color: #3b0b11;
@@ -120,20 +128,13 @@ ul {
   text-decoration: none;
 }
 h2 {
-  padding: 0.5em 0 0.5em 0;
+  padding: 2em 0 1em 0;
 }
 .Text {
   color: #b2ab9b;
   font-weight: 500;
 }
-.bilderdator {
-  padding-top: 1em;
-  width: 50%;
-  @media (min-width: 1000px) {
-    width: 30%;
-    padding-top: 2em;
-  }
-}
+
 footer {
   background-color: #e2c88d;
   width: 100%;
@@ -146,7 +147,17 @@ footer {
   width: 90%;
 }
 footer img {
-  width: 30%;
+  width: 80%;
   border-radius: 4em;
   padding: 1em;
+
+  @media (min-width: 450px) {
+    width: 20%;
+  }
+  @media (min-width: 620px) {
+    width: 15%;
+  }
+  @media (min-width: 100px) {
+    width: 10%;
+  }
 }

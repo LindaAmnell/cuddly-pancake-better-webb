@@ -38,6 +38,7 @@ header {
   margin: 1em 0 1em 0;
   width: 100%;
   border-radius: 4em;
+  box-shadow: 0.2em 0.3em 0.4em -0.1em rgb(80, 80, 80);
   @media (min-width: 450px) {
     width: 80%;
   }
@@ -45,35 +46,33 @@ header {
     width: 70%;
   }
 }
-a {
+/* a {
   color: #000000;
   font-weight: bold;
   text-decoration: none;
+} */
+header a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  border: solid 1px black;
+  padding: 0.5em;
+  border-radius: 1em;
+  box-shadow: 0.2em 0.3em 0.4em -0.1em rgb(80, 80, 80);
+
+  &:hover {
+    background-color: #000000;
+    color: #e2c88d;
+    transition: background-color 0.25s ease-in-out;
+  }
 }
 main {
   margin: 0 4em 0 4em;
   display: grid;
   place-items: center;
   width: 90%;
-  padding-bottom: 2.5em;
-  @media (min-width: 620px) {
-    width: 85%;
-  }
-  @media (min-width: 820px) {
-    width: 80%;
-  }
-  @media (min-width: 1000px) {
-    width: 75%;
-  }
-  @media (min-width: 1200px) {
-    width: 70%;
-  }
-  @media (min-width: 1600px) {
-    width: 60%;
-  }
-  @media (min-width: 2000px) {
-    width: 50%;
-  }
+  padding-bottom: 1em;
+  max-width: 1000px;
 }
 .container {
   padding: 1.5em 0 1.5em 0;
@@ -95,7 +94,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
-  @media (min-width: 1300px) {
+  @media (min-width: 1400px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1em;
@@ -103,20 +102,83 @@ h1 {
 }
 .bilderhotel {
   width: 100%;
+  box-shadow: 0.2em 0.3em 0.4em -0.1em rgb(8, 8, 8);
+  position: relative;
+  top: 0em;
+  transition: background-color 0.25s ease-in-out;
+  &:hover {
+    /* width: 150%; */
+    top: -0.7em;
+    box-shadow: 0.2em 0.3em 0.4em -0.1em #e2c88d;
+  }
 }
 
 ul {
   padding-top: 0.5em;
   padding-bottom: 1em;
 }
-.bättreweb {
-  width: 60%;
-  padding-bottom: 2em;
-}
-
-.datorer {
+.Event {
+  background-image: url(bilder/Bättre\ Webb.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 30em;
   display: grid;
   place-items: center;
+  padding: 1em;
+  box-shadow: 0.2em 0.3em 0.4em -0.1em rgb(8, 8, 8);
+  @media (min-width: 1400px) {
+    padding: 2em;
+  }
+}
+.Event > h3 {
+  padding-bottom: 1em;
+  font-size: x-large;
+}
+.info {
+  max-width: 740px;
+  line-height: 1.5;
+}
+.datorer {
+  width: 100%;
+  border-radius: 100%;
+  place-self: start;
+  padding-bottom: 0.5em;
+  position: relative;
+  top: 0em;
+  transition: background-color 0.25s ease-in-out;
+
+  &:hover {
+    top: -0.5em;
+    box-shadow: 0.2em 0.3em 0.4em -0.1em #e2c88d;
+  }
+}
+.Dator {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  padding-bottom: 1em;
+}
+.Litencontainer {
+  background-color: #201f1f;
+  height: auto;
+  border-top-right-radius: 20em;
+  border-top-left-radius: 20em;
+  display: grid;
+  place-items: center;
+  padding-bottom: 0.4em;
+}
+
+.knapp {
+  background-color: #3b0b11;
+  color: #e2c88d;
+  width: 4em;
+  padding: 0.3em;
+  border-radius: 1em;
+  display: grid;
+  place-items: center;
+  margin: 0.5em;
+  box-shadow: 0em 0.1em 0.4em -0.1em #e2c88d;
 }
 .button {
   background-color: #3b0b11;
@@ -127,13 +189,27 @@ ul {
   display: grid;
   place-items: center;
   text-decoration: none;
+  box-shadow: 0em 0.1em 0.4em -0.1em #e2c88d;
+
+  &:hover {
+    background-color: #e2c88d;
+    color: #3b0b11;
+    transition: background-color 0.25s ease-in-out;
+    font-weight: bold;
+    box-shadow: 0.2em 0.2em 0.5em -0.1em #3b0b11;
+  }
 }
 h2 {
   padding: 2em 0 1em 0;
 }
+.textcontainer {
+  max-width: 740px;
+  /* line-height: 1.5; */
+}
 .Text {
   color: #b2ab9b;
   font-weight: 500;
+  margin-top: 0.5em;
 }
 
 footer {
@@ -148,7 +224,7 @@ footer {
   width: 90%;
 }
 footer img {
-  width: 80%;
+  width: 100%;
   border-radius: 4em;
   padding: 1em;
 

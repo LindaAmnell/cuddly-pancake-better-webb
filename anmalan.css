@@ -1,32 +1,61 @@
-form {
-  background-color: #3b0b11;
-  margin: 0.5em 0;
-  padding: 1em 3em 2em 3em;
+h1 {
+  padding-top: 1em;
 }
 
-.form-section {
+form {
+  background-color: #3b0b11;
+  padding: 1em 4em 2em 4em;
+  margin-bottom: 2em;
+}
+
+.form-section,
+.form-section2 {
   display: flex;
   flex-direction: column;
   margin: 1em 0;
+  @media (min-width: 820px) {
+    align-items: center;
+  }
+}
+.form-section input {
+  border: solid 2px #e2c88d;
+  border-radius: 1em;
+  height: 2em;
+  @media (min-width: 820px) {
+    width: 80%;
+  }
+  @media (min-width: 1000px) {
+    width: 70%;
+  }
+  @media (min-width: 1400px) {
+    width: 60%;
+  }
+  @media (min-width: 2000px) {
+    width: 55%;
+  }
 }
 .form-section.row {
   flex-direction: row;
+  justify-content: center;
 }
 
-input:valid {
+/* input:valid {
   border-right: 1em solid rgb(35, 130, 71);
 }
 input:invalid {
-  border-right: 1em solid rgb(111, 33, 33);
+  border-right: 1em solid rgb(137, 58, 58);
+} */
+.code {
+  display: grid;
+  place-items: center;
 }
-
-.error-message {
-  visibility: hidden;
-  margin: 0;
-  color: rgb(111, 33, 33);
-  font-weight: bold;
+.codbild {
+  width: 100%;
+  padding: 1em 0 0 0;
 }
-/* Sibling selector, + väljer ut nästa element */
-input:invalid + .error-message {
-  visibility: visible;
+.form-section2 > p {
+  padding: 1em;
+}
+.form-section2 div {
+  padding-bottom: 0.3em;
 }

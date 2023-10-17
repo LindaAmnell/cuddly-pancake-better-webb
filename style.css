@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  box-sizing: border-boxs;
+  box-sizing: border-box;
 }
 body {
   background-color: #28282a;
@@ -9,48 +9,33 @@ body {
   place-items: center;
   font-family: "Cinzel", serif;
   font-size: large;
+  width: 100%;
 }
 header {
   background-color: #e2c88d;
-  width: auto;
+  width: 100%;
   display: grid;
   place-items: center;
+  padding: 1em;
 }
 .huvud {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
-  grid-gap: 1em;
-  margin: 0 3em 0 3em;
-  width: 70%;
-  @media (min-width: 620px) {
-    width: 60%;
-  }
-  @media (min-width: 820px) {
-    width: 50%;
-  }
-  @media (min-width: 1000px) {
-    width: 40%;
-  }
+  grid-gap: 3em;
+  max-width: 800px;
 }
 
-.logga {
-  margin: 1em 0 1em 0;
-  width: 100%;
+.bildknapp {
+  background-image: url(bilder/Företagslogga.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 110px;
+  height: 70px;
   border-radius: 4em;
   box-shadow: 0.2em 0.3em 0.4em -0.1em rgb(80, 80, 80);
-  @media (min-width: 450px) {
-    width: 80%;
-  }
-  @media (min-width: 620px) {
-    width: 70%;
-  }
 }
-/* a {
-  color: #000000;
-  font-weight: bold;
-  text-decoration: none;
-} */
+
 header a {
   color: #000000;
   font-weight: bold;
@@ -70,7 +55,6 @@ main {
   margin: 0 4em 0 4em;
   display: grid;
   place-items: center;
-  width: 90%;
   padding-bottom: 1em;
   max-width: 1000px;
 }
@@ -88,13 +72,14 @@ h1 {
   margin-top: 2em;
   display: grid;
   place-items: center;
+  max-width: 990px;
 }
 .Småcontainer {
   padding-top: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
-  @media (min-width: 1400px) {
+  @media (min-width: 1200px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1em;
@@ -105,9 +90,10 @@ h1 {
   box-shadow: 0.2em 0.3em 0.4em -0.1em rgb(8, 8, 8);
   position: relative;
   top: 0em;
-  transition: background-color 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
   &:hover {
-    /* width: 150%; */
+    z-index: 100;
+    width: 190%;
     top: -0.7em;
     box-shadow: 0.2em 0.3em 0.4em -0.1em #e2c88d;
   }
@@ -121,8 +107,7 @@ ul {
   background-image: url(bilder/Bättre\ Webb.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 90%;
-  height: 30em;
+  max-width: 900px;
   display: grid;
   place-items: center;
   padding: 1em;
@@ -172,13 +157,13 @@ ul {
 .knapp {
   background-color: #3b0b11;
   color: #e2c88d;
-  width: 4em;
+  width: 5em;
   padding: 0.3em;
   border-radius: 1em;
   display: grid;
   place-items: center;
   margin: 0.5em;
-  box-shadow: 0em 0.1em 0.4em -0.1em #e2c88d;
+  /* box-shadow: 0em 0.1em 0.4em -0.1em #e2c88d; */
 }
 .button {
   background-color: #3b0b11;
@@ -194,7 +179,7 @@ ul {
   &:hover {
     background-color: #e2c88d;
     color: #3b0b11;
-    transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
     font-weight: bold;
     box-shadow: 0.2em 0.2em 0.5em -0.1em #3b0b11;
   }
@@ -204,37 +189,32 @@ h2 {
 }
 .textcontainer {
   max-width: 740px;
-  /* line-height: 1.5; */
 }
 .Text {
   color: #b2ab9b;
   font-weight: 500;
   margin-top: 0.5em;
 }
-
 footer {
   background-color: #e2c88d;
   width: 100%;
+  padding: 1em;
+  color: #000000;
   display: grid;
   place-items: center;
 }
 .fot {
   display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
   place-items: center;
-  width: 90%;
+  max-width: 900px;
+  grid-gap: 2em;
+  margin: 1em;
 }
-footer img {
-  width: 100%;
-  border-radius: 4em;
-  padding: 1em;
-
-  @media (min-width: 450px) {
-    width: 20%;
-  }
-  @media (min-width: 620px) {
-    width: 15%;
-  }
-  @media (min-width: 100px) {
-    width: 10%;
+.mejl {
+  color: #000000;
+  text-decoration: none;
+  &:hover {
+    color: #6189cd;
   }
 }

@@ -1,87 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anmälan</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="anmalan.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-
     <header>
       <div class="huvud">
         <a href="anmalan.html"> Anmälan</a>
-        <a class="bildknapp" href="index.html">
-        <a href="index.html#Seminarier"> Seminarier</a>
+        <a class="logga" href="index.html"> Frontend </a>
+        <a href="index.html#seminarier"> Seminarier</a>
       </div>
     </header>
 
     <main>
       <h1>Anmäl dig här</h1>
-    <form action="välkommen.html">
-		<section class="personliginfo">
-		<h4>Personlig Information</h4>
-        	<div class="form-section">
-          <label for="form-name"> Förnamn </label>
-          <input
-            type="text"
-            name="form-name"
-            id="form-name"
-            placeholder="Förnamn"
-            required
-            minlength="2"
-            maxlength="18"/>
-	  		</div>
+      <form action="välkommen.html">
+        <section class="personliginfo">
+          <h4>Personlig Information</h4>
+          <div class="form-section">
+            <label for="form-name"> Förnamn </label>
+            <input
+              type="text"
+              name="form-name"
+              id="form-name"
+              placeholder="Namn"
+              required
+              minlength="2"
+              maxlength="18" />
+          </div>
 
-			<div class="form-section">
-			<label for="efter-name"> Efternamn </label>
-			<input
-			  type="text"
-			  name="efter-name"
-			  id="efter-name"
-			  placeholder="Efternamn"
-			  required
-			  minlength="2"
-			  maxlength="18"/>
-			</div>
+          <div class="form-section">
+            <label for="efter-name"> Efternamn </label>
+            <input
+              type="text"
+              name="efter-name"
+              id="efter-name"
+              placeholder="Efternamn"
+              required
+              minlength="2"
+              maxlength="18" />
+          </div>
 
-        	<div class="form-section">
-          	<label for="form-adress"> Adress </label>
-          	<input
-            name="form-address"
-            id="form-adress"
-			minlength="5"
-            placeholder="Adress"
-            required></input>
-			</div>
+          <div class="form-section">
+            <label for="form-adress"> Adress </label>
+            <input
+              name="form-address"
+              id="form-adress"
+              minlength="5"
+              placeholder="Adress"
+              required />
+          </div>
 
-        	<div class="form-section">
-          	<label for="E-postadress"> E-postadress </label>
-          	<input
-            type="email"
-            name="E-postadress"
-            id="E-postadress"
-            placeholder="E-postadress"
-            required
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$"/>
-        	</div>
+          <div class="form-section">
+            <label for="E-postadress"> E-postadress </label>
+            <input
+              type="email"
+              name="E-postadress"
+              id="E-postadress"
+              placeholder="E-postadress"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" />
+          </div>
+        </section>
 
-		</section>
-
-		<section class="dagar">
-		<h4>Välj dag/dagar</h4>
-        <div class="form-section2">
-			<div>
-
+        <section class="dagar-mat">
+          <h4>Välj dag/dagar</h4>
+          <div class="form-section2">
             <div>
-              <input id="dag1" type="checkbox" name="Fredag"/>
+              <input id="dag1" type="checkbox" name="Fredag" />
               <label for="dag1">Fredag</label>
             </div>
 
@@ -91,7 +81,7 @@
             </div>
 
             <div>
-              <input id="dag3" type="checkbox"name="söndag" />
+              <input id="dag3" type="checkbox" name="söndag" />
               <label for="dag3">Söndag</label>
             </div>
 
@@ -99,61 +89,56 @@
               <input id="alladagar" type="checkbox" name="Helgpass" />
               <label for="alladagar">Fredag-Söndag</label>
             </div>
+          </div>
 
-			</div>
-		</div>
-		</section>
+          <h4>Vad vill du äta</h4>
+          <div class="form-section2">
+            <div>
+              <input id="easy-5" type="radio" name="1" />
+              <label for="easy-5"> Kött </label>
+            </div>
 
-		<section class="mat">
-		<h4>Vad vill du äta</h4>
-        <div class="form-section2">
-			<div class="sectionmat">
-              	<div>
-                <input id="easy-5" type="radio" name="1" />
-                <label for="easy-5"> Kött </label>
-            	</div>
+            <div>
+              <input id="easy-6" type="radio" name="1" />
+              <label for="easy-6"> Fisk </label>
+            </div>
 
-				<div>
-                <input id="easy-6" type="radio" name="1" />
-                <label for="easy-6"> Fisk </label>
-            	</div>
+            <div>
+              <input id="easy-7" type="radio" name="1" />
+              <label for="easy-7"> Vegetariskt </label>
+            </div>
+          </div>
 
-            	<div>
-                <input id="easy-7" type="radio" name="1" />
-                <label for="easy-7"> Vegetariskt </label>
-            	</div>
+          <div class="form-section">
+            <h4>Allergi</h4>
+            <textarea
+              rows="2"
+              cols="40"
+              name="allergi"
+              placeholder="Skriv allergi här"></textarea>
+          </div>
 
-				<div>
-                <input id="easy-8" type="radio" name="1" />
-                <label for="easy-8"> Veganskt </label>
-            	</div>
-			</div>
-		</div>
-
-        	<div class="form-section">
-          	<label for="form-allergi"> Har du någon allergi</label>
-          	<input id="form-allergi" type="text" value="" placeholder="Allergi" />
-       		</div>
-
-			<div class="form-section row">
-				<button class="skicka" type="submit">Skicka in anmälan</button>
-				<button class="rensa" type="reset">Rensa</button>
-			</div>
-		</section>
-    </form>
+          <div class="form-section row">
+            <button class="skicka" type="submit">Skicka in anmälan</button>
+            <button class="rensa" type="reset">Rensa</button>
+          </div>
+        </section>
+      </form>
     </main>
-	<footer>
-		<div class="fot">
-			<div> <p> Adress:</p>
-				<p>Torgvägen 1</p>
-				<p>12345 Göteborg</p>
-		 	</div>
-			<a class="bildknapp" href="index.html"></a>
-			<div><P>Kontakt:</P>
-			<p>Tele: 0303-12345</p>
-			<a href="mailto:Frontend@outlook.se" class="mejl">Mejla oss</a></div>
-		</div>
-	</footer>
-
+    <footer>
+      <div class="fot">
+        <div>
+          <p>Adress:</p>
+          <p>Torgvägen 1</p>
+          <p>12345 Göteborg</p>
+        </div>
+        <a class="logga" href="index.html"> Frontend </a>
+        <div>
+          <p>Kontakt:</p>
+          <p>Tele: 0303-12345</p>
+          <a href="mailto:Frontend@outlook.se" class="mejl">Mejla oss</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

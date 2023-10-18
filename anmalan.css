@@ -1,14 +1,18 @@
-body {
-}
 h1 {
-  padding-top: 1em;
+  margin-top: 1em;
 }
 
 form {
   background-color: #3b0b11;
-  padding: 1em 4em 1em 4em;
-  margin-bottom: 4em;
+  padding: 1em 4em;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 100%;
+    padding: 1em;
+  }
 }
 
 .form-section,
@@ -17,17 +21,25 @@ form {
   flex-direction: column;
   margin: 1em 0;
 }
+
 .form-section input {
   border: solid 2px #e2c88d;
   border-radius: 1em;
   height: 3em;
-  width: 20em;
+  max-width: 20em;
 }
 
 .form-section.row {
   flex-direction: row;
   justify-content: center;
-  padding: 1em;
+  padding: 0.5em;
+}
+textarea {
+  resize: none;
+  border: solid 2px #e2c88d;
+  border-radius: 1em;
+  height: 3em;
+  max-width: 20em;
 }
 .skicka {
   background-color: #e2c88d;

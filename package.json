@@ -2,7 +2,7 @@
   "name": "cuddly-pancake-better-webb",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "deploy": "surge ."
   },
@@ -13,3 +13,5 @@
     "surge": "^0.23.1"
   }
 }
+
+surge --domain cuddly-pancake.surge.sh

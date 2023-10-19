@@ -2,7 +2,7 @@
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> 
     <title>Anmälan</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="anmalan.css" />
@@ -16,7 +16,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="formmain">
       <h1>Anmäl dig här</h1>
       <form action="välkommen.html">
         <section class="personliginfo">
@@ -84,6 +84,14 @@
               <input id="dag3" type="checkbox" name="söndag" />
               <label for="dag3">Söndag</label>
             </div>
+<<<<<<< HEAD
+=======
+
+            <div>
+              <input id="alladagar" type="checkbox" name="Helgpass" />
+              <label for="alladagar">Fredag-Söndag</label>
+            </div>
+>>>>>>> test
           </div>
 
           <h4>Vad vill du äta</h4>
@@ -108,13 +116,13 @@
             <h4>Allergi</h4>
             <textarea
               rows="2"
-              cols="40"
+              cols="30"
               name="allergi"
               placeholder="Skriv allergi här"></textarea>
           </div>
 
           <div class="form-section row">
-            <button class="skicka" type="submit">Skicka in anmälan</button>
+            <button class="skicka" type="submit">Skicka in</button>
             <button class="rensa" type="reset">Rensa</button>
           </div>
         </section>

@@ -49,11 +49,11 @@ textarea {
   border-radius: 1em;
   font-weight: bold;
   box-shadow: 0.2em 0.3em 0.4em -0.1em rgb(80, 80, 80);
-  &:hover {
-    background-color: #000000;
-    color: #e2c88d;
-    transition: background-color 0.4s ease-in-out;
-  }
+}
+.skicka:hover {
+  background-color: #000000;
+  color: #e2c88d;
+  transition: background-color 0.4s ease-in-out;
 }
 .rensa {
   background-color: #000000;
@@ -64,11 +64,11 @@ textarea {
   font-weight: bold;
   box-shadow: 0.2em 0.3em 0.4em -0.1em rgb(80, 80, 80);
   margin-left: 1em;
-  &:hover {
-    background-color: #444444;
-    color: #e2c88d;
-    transition: background-color 0.4s ease-in-out;
-  }
+}
+.rensa:hover {
+  background-color: #444444;
+  color: #e2c88d;
+  transition: background-color 0.4s ease-in-out;
 }
 input:valid {
   border-right: 0.5em solid rgb(35, 130, 71);

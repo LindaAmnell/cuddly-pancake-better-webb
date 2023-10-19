@@ -298,6 +298,8 @@ ul {
   place-items: center;
   margin: 0.5em;
   box-shadow: 0em 0.1em 0.4em -0.1em #e2c88d;
+  font-weight: bold;
+
 }
 .knapp > a:hover {
   background-color: #e2c88d;
@@ -316,6 +318,7 @@ ul {
   place-items: center;
   text-decoration: none;
   box-shadow: 0em 0.1em 0.4em -0.1em #e2c88d;
+  font-weight: bold;
 }
 .button:hover {
   background-color: #e2c88d;

@@ -6,6 +6,9 @@ main{
 	margin:0;
 	padding:0;
 }
+.huvud > a{
+	font-weight: lighter;
+}
 
 form {
   background-color: #3b0b11;
@@ -30,6 +33,9 @@ form {
   border-radius: 1em;
   height: 3em;
   max-width: 20em;
+}
+h4{
+	padding-bottom: 0.5em;
 }
 
 .form-section.row {
